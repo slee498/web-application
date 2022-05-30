@@ -1,0 +1,117 @@
+/* table for product page */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  
+  body {
+      background-color: rgb(255, 255, 255);
+  }
+
+/* navigation bar */
+body {
+  margin: 0;
+  background: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: rgb(255, 255, 255);
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  text-align: center;
+  margin-left: 130px;
+  margin-right: 130px;
+  padding-top: 50px;
+}
+
+nav a {
+  color: rgb(105, 120, 100);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: rgb(150, 175, 140);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* news page article links */
+
+h1 a {
+  text-decoration: none;
+  font-family: 'Times New Roman';
+  font-size: medium;
+  padding-left: 100px;
+  color: rgb(83, 83, 83);
+}
+
+h1 a:hover{
+  color: rgb(193, 193, 193);
+}
+
+h2 a{
+  text-decoration: none;
+  font-family: 'Times New Roman';
+  font-size: medium;
+  padding-left: 100px;
+  color: rgb(83, 83, 83);
+}
+
+h2 a:hover{
+  color: rgb(193, 193, 193);
+}
+
+h3 a {
+  text-decoration: none;
+  font-family: 'Times New Roman';
+  font-size: medium;
+  padding-left: 100px;
+  color: rgb(83, 83, 83);
+}
+
+h3 a:hover{
+  color: rgb(193, 193, 193);
+}
+
+/* home */
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
