@@ -1,46 +1,41 @@
-/* table for product page */
+/* table on products page */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 75%;
+    width: 100%;
   }
   
   td, th {
-    border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
-
   }
   
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+/* home imsge*/
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  
-  body {
-      background-color: rgb(255, 255, 255);
-  }
+form{
+  text-align: center;
+}
+
+.bg-img{
+  background-image: url(image.jpg);
+  background-attachment: scroll;
+}
 
 /* navigation bar */
 body {
   margin: 0;
-  background: rgb(255, 255, 255);
   font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
-  width: 80%;
+  position: absolute;
+  width: auto;
   margin: 0 auto;
-}
-
-header {
-  background: rgb(255, 255, 255);
-}
-
-header::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 nav ul {
@@ -51,20 +46,20 @@ nav ul {
 nav li {
   float: left;
   text-align: center;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 180px;
+  margin-right: 150px;
   padding-top: 50px;
 }
 
 nav a {
-  color: rgb(105, 120, 100);
+  color: rgb(243, 243, 243);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 nav a:hover {
-  color: rgb(150, 175, 140);
+  color: rgb(139, 139, 139);
 }
 
 ::-webkit-scrollbar {
@@ -72,7 +67,6 @@ nav a:hover {
 }
 
 /* news page article links */
-
 h1 a {
   text-decoration: none;
   font-family: 'Times New Roman';
@@ -109,10 +103,3 @@ h3 a:hover{
   color: rgb(193, 193, 193);
 }
 
-/* home */
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}

@@ -21,20 +21,20 @@
         </div>
     </header>
    
-    <br><br>
+    <br><br> <br><br> <br><br> 
 
-    <table>
+    <table class="center">
         <tr>
-            <th>name</th>
-            <th>price</th>
-            <th>image</th>
-            <th>delete?</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     {% for item in results %}
         <tr>
             <td> {{item[1]}} </td>
             <td> ${{item[2]}} </td>
-            <th></th>
+            <td><img src="{{url_for('static', filename='images/tooth.webp')}}"></td>
             <td>
                 <form action="/delete" method="post">
                     <input type="hidden" name="product_name" value="{{item[0]}}">
@@ -47,15 +47,18 @@
 
    <form action="/add" method="post">
         <h1> enter new product </h1>
-        <input type="text" name="product_name">
-        <input type="number" name="product_price">
+        <input type="text" name="product_name" placeholder="enter name" required="true">
+        <input type="number" name="product_price" placeholder="please use decimals" min="0.00" step="0.01" required="true">
         <input type="submit" value="add">
     </form>
 
+
+    
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<body style="background-color: rgb(132, 142, 71);"></body>
 
 </body>
 </html>
