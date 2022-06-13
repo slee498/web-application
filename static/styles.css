@@ -22,8 +22,12 @@ form{
 }
 
 .bg-img{
-  background-image: url(image.jpg);
-  background-attachment: scroll;
+  background-image: url(images/Unknown.jpeg);
+   min-height: 100%;
+   min-width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
 }
 
 /* navigation bar */
