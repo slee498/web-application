@@ -32,16 +32,20 @@
         </tr>
     {% for item in results %}
         <tr>
+            <td><img src="{{url_for('static', filename='images/tooth.webp')}}">
+        </tr>
+        <tr>
             <td> {{item[1]}} </td>
+        </tr>
+        <tr>
             <td> ${{item[2]}} </td>
-            <td><img src="{{url_for('static', filename='images/tooth.webp')}}"></td>
+        </tr> 
             <td>
                 <form action="/delete" method="post">
                     <input type="hidden" name="product_name" value="{{item[0]}}">
                     <input type="submit" value="delete">
                 </form>
             </td>
-        </tr>
     {% endfor %}
     </table>
 
