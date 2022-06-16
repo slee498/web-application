@@ -1,16 +1,18 @@
 /* table on products page */
-table {
+table, th, td {
     font-family: 'Times New Roman', Times, serif,;
     border-collapse: collapse;
     width: 100%;
-    font-size: 40px;
-  }
-  
-th, td {
+    font-size: 30px;
     text-align: center;
     padding: 8px;
   }
-  
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
 /* home imsge*/
 .bg-img{
    background-image: url('/static/images/Unknown.jpeg');
