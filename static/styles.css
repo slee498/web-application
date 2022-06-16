@@ -1,11 +1,11 @@
 /* table on products page */
-table, th, td {
+.table, th, td {
     font-family: 'Times New Roman', Times, serif,;
     border-collapse: collapse;
-    width: 100%;
     font-size: 30px;
     text-align: center;
-    padding: 8px;
+    float: left;
+    width: 100%;
   }
 
 img {
