@@ -23,15 +23,14 @@
    
     <br><br> <br><br> <br><br> <br><br> <br><br>
  
-    <div class="gird-container">
+    <div class="grid-container">
         {% for item in results %}
-        <div class="grid-item"><img src="{{url_for('static', filename='images/tooth.webp')}}"></div>
-        <div class="grid-item"> {{item[1]}} </div>
-        <div class="grid-item"> ${{item[2]}} </div>
-        <div class="grid-item"><form action="/delete" method="post">
-                                    <input type="hidden" name="product_name" value="{{item[0]}}">
-                                     <input type="submit" value="delete">
-                                </form></div>
+        <div class="grid-item"><img src="{{url_for('static', filename='images/tooth.webp')}}"> <br> {{item[1]}} <br> ${{item[2]}} 
+            <form action="/delete" method="post">
+            <input type="hidden" name="product_name" value="{{item[0]}}">
+            <input type="submit" value="delete">
+            </form>
+        </div>
         {% endfor %}
     </div>
 
