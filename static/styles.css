@@ -1,19 +1,24 @@
 /* grid on products page */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.grid-item {
+.flex-item {
   border: none;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
+  min-width: 100px;
 }
 
-img {
-  width: 500px;
-  height: 500px;
+.flex-image {
+  display: grid;
+  text-align: center;
+  width: 370px;
+  height: 370px;
 }
 
 /* home imsge*/
@@ -98,4 +103,3 @@ h3 a {
 h3 a:hover{
   color: rgb(193, 193, 193);
 }
-
