@@ -82,7 +82,7 @@ h1 a {
   font-family: 'Times New Roman';
   font-size: medium;
   padding-left: 100px;
-  color: rgb(186, 186, 186);
+  color: rgb(94, 93, 93);
 }
 
 h1 a:hover{
@@ -94,7 +94,7 @@ h2 a{
   font-family: 'Times New Roman';
   font-size: medium;
   padding-left: 100px;
-  color: rgb(186, 186, 186);
+  color: rgb(94, 93, 93);
 }
 
 h2 a:hover{
@@ -106,7 +106,7 @@ h3 a {
   font-family: 'Times New Roman';
   font-size: medium;
   padding-left: 100px;
-  color: rgb(186, 186, 186);
+  color: rgb(94, 93, 93);
 }
 
 h3 a:hover{
