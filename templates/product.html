@@ -24,7 +24,7 @@
     <br><br> <br><br> <br><br>
 
       <!-- add/remove item -->
-   <form action="/add" method="post">
+<form action="/add" method="post" class="add">
     <h1> enter new product </h1>
     <input type="text" name="product_name" placeholder="enter name" required="true">
     <input type="number" name="product_price" placeholder="please use decimals" min="0.00" step="0.01" required="true">
@@ -32,7 +32,7 @@
 </form>
 
  <!-- item one -->
-    <div class="container">
+    <div class="flex-container">
         {% for item in results %}
             <div class="flex-item">
                 <figure class="flex-image" >
@@ -41,7 +41,7 @@
                 {{item[1]}} <br> ${{item[2]}} <br> {{item[3]}}
             <form action="/delete" method="post">
             <input type="hidden" name="product_name" value="{{item[0]}}">
-            <input type="submit" value="delete"> <br><br>
+            <input type="submit" value="delete">
             </form> 
             </div>
         {% endfor %}

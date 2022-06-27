@@ -1,9 +1,15 @@
+/* add new product */
+.add {
+  padding-left: 60px;
+}
+
 /* grid on products page */
-.container {
+.flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 20px;
 }
 
 .flex-item {
@@ -23,7 +29,7 @@
 
 /* home imsge*/
 .bg-img{
-   background-image: url('/static/images/Unknown.jpeg');
+   background-image: url('/static/images/bgimg.jpg');
    background-size: cover;
 }
 
