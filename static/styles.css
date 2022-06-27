@@ -1,6 +1,7 @@
 /* add new product */
 .add {
   padding-left: 60px;
+  color: white;
 }
 
 /* grid on products page */
@@ -18,6 +19,7 @@
   font-size: 20px;
   text-align: center;
   min-width: 100px;
+  color: white;
 }
 
 .flex-image {
@@ -27,10 +29,15 @@
   height: 370px;
 }
 
-/* home imsge*/
+/* home background imsge*/
 .bg-img{
    background-image: url('/static/images/bgimg.jpg');
    background-size: cover;
+}
+
+/* product background image */
+.bgimg3{
+  background-image: url('/static/images/bgimg5.jpg');
 }
 
 /* navigation bar */
@@ -69,21 +76,17 @@ nav a:hover {
   color: rgb(139, 139, 139);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
 /* news page article links */
 h1 a {
   text-decoration: none;
   font-family: 'Times New Roman';
   font-size: medium;
   padding-left: 100px;
-  color: rgb(83, 83, 83);
+  color: rgb(186, 186, 186);
 }
 
 h1 a:hover{
-  color: rgb(193, 193, 193);
+  color: rgb(218, 218, 218);
 }
 
 h2 a{
@@ -91,11 +94,11 @@ h2 a{
   font-family: 'Times New Roman';
   font-size: medium;
   padding-left: 100px;
-  color: rgb(83, 83, 83);
+  color: rgb(186, 186, 186);
 }
 
 h2 a:hover{
-  color: rgb(193, 193, 193);
+  color: rgb(218, 218, 218);
 }
 
 h3 a {
@@ -103,9 +106,9 @@ h3 a {
   font-family: 'Times New Roman';
   font-size: medium;
   padding-left: 100px;
-  color: rgb(83, 83, 83);
+  color: rgb(186, 186, 186);
 }
 
 h3 a:hover{
-  color: rgb(193, 193, 193);
+  color: rgb(218, 218, 218);
 }
