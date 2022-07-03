@@ -70,9 +70,10 @@ body {
 }
 
 .container {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
 nav ul {
