@@ -49,9 +49,8 @@
 }
 
 /* home background imsge*/
-.bg-img{
-   background-image: url('/static/images/bgimg.jpg');
-   background-size: cover;
+.homeebg{
+   background-image: url('/static/images/homeebg.jpg');
 }
 
 /* product background image */
