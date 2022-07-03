@@ -4,7 +4,7 @@
   color: white;
 }
 
-/* grid on products page */
+/* flexbox on products page */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -29,6 +29,25 @@
   height: 370px;
 }
 
+/* grid on learn page */
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: main main;
+  height: 200px;
+  padding: 30px;
+  border: 3px black;
+  grid-gap: 5px;
+}
+
+.grid-item{
+  background-color: #d5e3e6;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: left;
+}
+
 /* home background imsge*/
 .bg-img{
    background-image: url('/static/images/bgimg.jpg');
@@ -38,6 +57,11 @@
 /* product background image */
 .bgimg3{
   background-image: url('/static/images/bgimg5.jpg');
+}
+
+/* learn page background image */
+.bgimg5b {
+  background-image: url('/static/images/bgimg5b.jpg');
 }
 
 /* navigation bar */
