@@ -38,7 +38,7 @@
                 <figure class="flex-image" >
                     <img src="{{url_for('static', filename='images/tooth.webp')}}" class="flex-image" alt="IMG 1">
                 </figure> 
-                {{item[1]}} <br> {{item[2]}} <br> ${{item[3]}} <br> {{item[4]}}
+                {{item[1]}} <br> {{item[2]}} <br> {{item[3]}}
             <form action="/delete" method="post">
             <input type="hidden" name="product_name" value="{{item[0]}}">
             <input type="submit" value="delete">
