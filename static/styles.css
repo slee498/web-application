@@ -4,6 +4,20 @@
   color: white;
 }
 
+/* modal box */
+.modal {
+  width: auto;
+  height: auto;
+  position: fixed;
+  background-color: rgb(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: cornsilk;
+  padding: 20px;
+  width: 50%;
+}
+
 /* flexbox on products page */
 .flex-container {
   display: flex;
@@ -136,3 +150,4 @@ h3 a {
 h3 a:hover{
   color: rgb(218, 218, 218);
 }
+
