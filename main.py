@@ -32,26 +32,31 @@ def product():
     results = cursor.fetchall()
     return render_template("product.html", results=results)
 
-@app.route("/add", methods=("GET","POST"))
-def add():
-    if request.method == "POST":
-        cursor = get_db().cursor()
-        new_product = request.form["product_name"]
-        new_price = request.form["product_price"]
-        sql = "INSERT INTO product(name, price) VALUES (?,?)"
-        cursor.execute(sql,(new_product,new_price))
-        get_db().commit()
-    return redirect("/product")
+# @app.route("/product/<int:product_id>")
+# def showpost(product_id):
+#     name = "SELECT name FROM product"
+#     return f"product {product_id}" "\n" f"product {name}" 
 
-@app.route("/delete", methods=("GET","POST"))
-def delete():
-    if request.method == "POST":
-        cursor = get_db().cursor()
-        id = int(request.form["product_name"])
-        sql = "DELETE FROM product WHERE id=?"
-        cursor.execute(sql,(id,))
-        get_db().commit()
-    return redirect("/product")
+# @app.route("/add", methods=("GET","POST"))
+# def add():
+#     if request.method == "POST":
+#         cursor = get_db().cursor()
+#         new_product = request.form["product_name"]
+#         new_price = request.form["product_price"]
+#         sql = "INSERT INTO product(name, price) VALUES (?,?)"
+#         cursor.execute(sql,(new_product,new_price))
+#         get_db().commit()
+#     return redirect("/product")
+
+# @app.route("/delete", methods=("GET","POST"))
+# def delete():
+#     if request.method == "POST":
+#         cursor = get_db().cursor()
+#         id = int(request.form["product_name"])
+#         sql = "DELETE FROM product WHERE id=?"
+#         cursor.execute(sql,(id,))
+#         get_db().commit()
+#     return redirect("/product")
 
 @app.route("/learn")
 def learn():
