@@ -8,10 +8,6 @@ DATABASE = "product.db"
  
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return render_template("home.html")
-
 def get_db():
     db = getattr(g, "_database", None)
     if db is None:
@@ -24,6 +20,14 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
+@app.route("/")
+def home():
+    cursor = get_db().cursor()
+    sql = "SELECT * FROM product"
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return render_template("home.html", results=results)
+
 @app.route("/product")
 def product():
     cursor = get_db().cursor()
@@ -32,10 +36,12 @@ def product():
     results = cursor.fetchall()
     return render_template("product.html", results=results)
 
-# @app.route("/product/<int:product_id>")
-# def showpost(product_id):
-#     name = "SELECT name FROM product"
-#     return f"product {product_id}" "\n" f"product {name}" 
+@app.route("/product/<int:product_id>")
+def showpost(product_id):
+    if product_id < 10:
+        return f"product {product_id}" 
+    else:
+        return f"This page does not exist"
 
 # @app.route("/add", methods=("GET","POST"))
 # def add():
