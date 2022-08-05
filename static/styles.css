@@ -10,7 +10,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 35px;
+  row-gap: 80px;
 }
 
 .flex-item {
@@ -84,7 +84,8 @@ nav ul {
 nav li {
   float: left;
   text-align: center;
-  margin-left: 180px;
+  left: 0;
+  margin-left: 175px;
   margin-right: 150px;
   padding-top: 50px;
 }

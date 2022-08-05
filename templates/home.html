@@ -21,6 +21,16 @@
     </header>
 </body>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slider">
+    {% for item in results %}
+    <div class="images">
+        <img src="static/images/{{item[2]}}">
+    </div>
+    {% endfor %}
+</div>
+
 <div class="bg-img" style="background-image: url('static/images/Unknown.jpeg')"></div>
 
 <body class="homeebg">
