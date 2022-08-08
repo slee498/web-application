@@ -53,6 +53,29 @@
    background-image: url('/static/images/homeebg.jpg');
 }
 
+.boody{
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
+}
+
+.slider-1{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 28%;
+  top: 30%;
+}
+
+images{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+}
+
 /* product background image */
 .bgimg3{
   background-image: url('/static/images/bgimg5.jpg');
