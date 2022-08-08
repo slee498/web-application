@@ -1,4 +1,5 @@
 from crypt import methods
+import imghdr
 from flask import Flask,render_template, g,request,redirect
 from flask import g
 import sqlite3 
@@ -38,31 +39,11 @@ def product():
 
 @app.route("/product/<int:product_id>")
 def showpost(product_id):
-    if product_id < 10:
-        return f"product {product_id}" 
-    else:
-        return f"This page does not exist"
-
-# @app.route("/add", methods=("GET","POST"))
-# def add():
-#     if request.method == "POST":
-#         cursor = get_db().cursor()
-#         new_product = request.form["product_name"]
-#         new_price = request.form["product_price"]
-#         sql = "INSERT INTO product(name, price) VALUES (?,?)"
-#         cursor.execute(sql,(new_product,new_price))
-#         get_db().commit()
-#     return redirect("/product")
-
-# @app.route("/delete", methods=("GET","POST"))
-# def delete():
-#     if request.method == "POST":
-#         cursor = get_db().cursor()
-#         id = int(request.form["product_name"])
-#         sql = "DELETE FROM product WHERE id=?"
-#         cursor.execute(sql,(id,))
-#         get_db().commit()
-#     return redirect("/product")
+    cursor = get_db().cursor()
+    sql = "SELECT file_name, name, Av_price, description FROM product"
+    cursor.execute(sql, (product_id))
+    results = cursor.fetchall()
+    return render_template("var.html", results=results)
 
 @app.route("/learn")
 def learn():
