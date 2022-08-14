@@ -1,0 +1,13 @@
+{% extends "product.html" %}
+
+{% block body %}
+
+    {% for item in variable %}
+    <div class="flex-item">
+        <figure class="flex-image" >
+            <img src="static/images/{{item[1]}}" class="flex-image" alt="IMG">
+        </figure> 
+    </div> 
+    {% endfor %}
+
+{% endblock body %}
