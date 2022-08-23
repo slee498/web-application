@@ -23,11 +23,7 @@ def close_connection(exception):
 
 @app.route("/")
 def home():
-    cursor = get_db().cursor()
-    sql = "SELECT * FROM product"
-    cursor.execute(sql)
-    results = cursor.fetchall()
-    return render_template("home.html", results=results)
+    return render_template("home.html")
 
 @app.route("/product")
 def product():
@@ -40,10 +36,11 @@ def product():
 @app.route("/product/<int:product_id>")
 def showpost(product_id):
     cursor = get_db().cursor()
-    sql = "SELECT file_name, name, Av_price, description FROM product"
-    cursor.execute(sql, (product_id))
-    results = cursor.fetchall()
-    return render_template("var.html", results=results)
+    sql = "SELECT * FROM product WHERE id=?"
+    cursor.execute(sql, (product_id,))
+    variable = cursor.fetchone()
+    print(variable)
+    return render_template("var.html", variable=variable)
 
 @app.route("/learn")
 def learn():
