@@ -64,38 +64,9 @@
   font-size: 22px;
 }
 
-/* grid on learn page */
-.grid-container{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: main main;
-  height: 200px;
-  padding: 30px;
-  border: 3px black;
-  grid-gap: 5px;
-}
-
-.grid-item{
-  background-color: #d5e3e6;
-  text-decoration: none;
-  text-align: center;
-  color: rgb(66,121,152);
-  font-size: 20px;
-  padding: 15px;
-  @font-face {
-    font-family: DynaPuff;
-    src: url(/static/dynapuff.ttf);
-  }
-}
-
-.grid-img{
-  width: auto;
-  height: auto;
-}
-
 /* home background imsge*/
 .homeebg{
-   background-image: url('/static/images/homeebg.jpg');
+   background-image: url('/static/images/bgimg5-2.jpg');
 }
 
 .photo_reel{
@@ -109,6 +80,11 @@
   height: 60%;
 }
 
+@keyframes facts{
+  from {background-color: white;}
+  to {background-color: black;}
+}
+
 /* product background image */
 .bgimg3{
   background-image: url('/static/images/bgimg5.jpg');
@@ -119,6 +95,27 @@
   background-image: url('/static/images/bgimg5b.jpg');
 }
 
+/* grid on learn page */
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: main main;
+  margin-left: 30px;
+  height: 400px;
+  width: 1300px;
+  padding: 40px;
+  grid-gap: 80px;
+}
+
+.grid-item{
+  background-color: #d5e3e6b3;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(66,121,152);
+  font-size: 20px;
+  padding: 15px;
+}
+
 .art-img{
   margin-left: auto;
   margin-right: auto;
@@ -126,14 +123,9 @@
   width: 50%;
 }
 
-/* navigation bar */
+/* nav bar */
 body {
   margin: 0;
-  @font-face {
-    font-family: DynaPuff;
-    src: url("static/dynapuff.ttf");
-  }
-  font-family: 'dynapuff';
 }
 
 .container {
@@ -165,52 +157,6 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(94, 93, 93);
-}
-
-/* news page article links */
-h1 a {
-  text-decoration: none;
-  @font-face {
-    font-family: DynaPuff;
-    src: url("/static/dynapuff.ttf");
-  }
-  font-family: 'dynapuff';
-  font-size: medium;
-  padding-left: 100px;
-}
-
-h1 a:hover{
-  color: rgb(218, 218, 218);
-}
-
-h2 a{
-  text-decoration: none;
-  @font-face {
-    font-family: DynaPuff;
-    src: url("/static/dynapuff.ttf");
-  }
-  font-family: 'dynapuff';
-  font-size: medium;
-  padding-left: 100px;
-}
-
-h2 a:hover{
-  color: rgb(94, 93, 93);
-}
-
-h3 a {
-  text-decoration: none;
-  @font-face {
-    font-family: DynaPuff;
-    src: url("/static/dynapuff.ttf");
-  }
-  font-family: 'dynapuff';
-  font-size: medium;
-  padding-left: 100px;
-}
-
-h3 a:hover{
   color: rgb(94, 93, 93);
 }
 
