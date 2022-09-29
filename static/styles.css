@@ -1,4 +1,4 @@
-/* flexbox on products page */
+/* products page flexbox for database contents */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -32,7 +32,7 @@
   color: rgb(94, 93, 93);
 }
 
-/* flexbox var.html extension */
+/* flexbox on var.html img + desc */
 .container-1{
   display: flex;
   margin: auto;
@@ -64,11 +64,12 @@
   font-size: 22px;
 }
 
-/* home background imsge*/
+/* home page background img*/
 .homeebg{
    background-image: url('/static/images/bgimg5-2.jpg');
 }
 
+/* home page image slideshow */
 .photo_reel{
   padding-left: 50px;
   padding-top: 50px;
@@ -85,17 +86,17 @@
   to {background-color: black;}
 }
 
-/* product background image */
+/* product page background img */
 .bgimg3{
   background-image: url('/static/images/bgimg5.jpg');
 }
 
-/* learn page background image */
+/* learn page background img */
 .bgimg5b {
   background-image: url('/static/images/bgimg5b.jpg');
 }
 
-/* grid on learn page */
+/* articles css grid on learn page */
 .grid-container{
   display: grid;
   grid-template-columns: auto auto;
@@ -103,8 +104,8 @@
   margin-left: 30px;
   height: 400px;
   width: 1300px;
-  padding: 40px;
-  grid-gap: 80px;
+  padding: 30px;
+  grid-gap: 40px;
 }
 
 .grid-item{

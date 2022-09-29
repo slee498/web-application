@@ -5,6 +5,7 @@ from flask import g
 import sqlite3 
 connect = sqlite3.connect("product.db")
 
+# retrieving database
 DATABASE = "product.db"
  
 app = Flask(__name__)
@@ -21,6 +22,7 @@ def close_connection(exception):
     if db is not None:
         db.close()
 
+# routes
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -45,6 +47,7 @@ def showpost(product_id):
 @app.route("/learn")
 def learn():
     return render_template("learn.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
