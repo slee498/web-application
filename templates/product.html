@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links template to stylesheet -->
     <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
     <title>Document</title>
 </head>
@@ -27,14 +28,18 @@
     <div class="flex-container">
         {% for item in results %}
             <div class="flex-item">
-                <figure class="flex-image" >
-                    <img src="static/images/{{item[1]}}" class="flex-image" alt="IMG">
-                </figure> 
-                <a href="http://127.0.0.1:5000/product/{{item[0]}}" class="pr-links">{{item[2]}}</a>
+                <!-- item[0] and item[1] refer to product name and image -->
+                <a href="http://127.0.0.1:5000/product/{{item[0]}}" class="pr-links">
+                    <figure class="flex-image" >
+                        <img src="static/images/{{item[1]}}" class="flex-image" alt="IMG">
+                    </figure> 
+                    {{item[2]}}
+                </a>
             </div> 
         {% endfor %}
     </div> 
 
+    <!-- background image -->
     <body class="bgimg3"></body>
     <br><br><br><br>
 
